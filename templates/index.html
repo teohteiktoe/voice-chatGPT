@@ -72,9 +72,9 @@
           .then((response) => response.text())
           .then((text) => {
             setStatus("Done.");
+            document.getElementById("text-output").value = text;
             let utterance = new SpeechSynthesisUtterance(text);
             synth.speak(utterance);
-            document.getElementById("text-output").value = text;
             recordButton.disabled = false;
             document.getElementById("submit-btn").disabled = true;
           })
