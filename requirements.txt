@@ -27,7 +27,6 @@ proto-plus==1.22.2
 protobuf==4.22.1
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-PyAudio==0.2.13
 pycparser==2.21
 pydub==0.25.1
 pyttsx3==2.90
