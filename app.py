@@ -14,7 +14,7 @@ import json
 app = Flask(__name__)
 
 # Set OpenAI API key and model
-openai.api_key = "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"
+openai.api_key = "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"
 
 from google.cloud import speech_v1p1beta1 as speech
 
