@@ -5,3 +5,5 @@ google-auth
 google-api-core
 google
 gunicorn
+grpcio
+googleapis-common-protos
