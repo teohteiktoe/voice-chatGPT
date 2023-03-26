@@ -1,0 +1,5 @@
+flask
+openai
+google-cloud-speech
+google-auth
+google-api-core
