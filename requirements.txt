@@ -3,4 +3,5 @@ openai
 google-cloud-speech
 google-auth
 google-api-core
+google
 gunicorn
