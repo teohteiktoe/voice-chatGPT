@@ -22,6 +22,7 @@
       // Set up variables for recording
       let recorder = null;
       let chunks = [];
+      let synth = speechSynthesis;
 
       // Set up variables for API endpoint and input prompt
       const apiEndpoint = "{{ url_for('sound_to_text') }}";
@@ -71,6 +72,8 @@
           .then((response) => response.text())
           .then((text) => {
             setStatus("Done.");
+            let utterance = new SpeechSynthesisUtterance(text);
+            synth.speak(utterance);
             document.getElementById("text-output").value = text;
             recordButton.disabled = false;
             document.getElementById("submit-btn").disabled = true;
