@@ -68,7 +68,9 @@ def sound_to_text():
     with open(audio_filename, "wb") as f:
         f.write(audio_file)
     text_output = generate_text_from_sound(audio_file)
-    return text_output
+    if text_output:
+      return text_output
+    return "no sound captured"
 
 # Run Flask app
 if __name__ == "__main__":
